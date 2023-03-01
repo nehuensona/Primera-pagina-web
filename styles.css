@@ -1,0 +1,237 @@
+
+/*Estilos gloales*/
+:root {
+    --tituloPagina: 'Send Flowers', cursive;
+    --naranja: #bd541c;
+    --blanco: white; 
+    --negro: black;
+    --fuenteSecundaria: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing:border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuenteSecundaria);
+    font-weight: bold;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+*, :before, *:after {
+    box-sizing: inherit;
+}
+
+
+/* Estilos para navegcion */
+@media (max-width: 670px){
+    .navegacion {
+        height: auto;
+        background-color: var(--negro);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+}
+
+.navegacion {
+    height: auto;
+    background-color: var(--negro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion a {
+    margin: 0 3rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--blanco);
+
+}
+.navegacion a:hover {
+    cursor: pointer;
+    color: var(--naranja);
+}
+
+#frontEnd {
+    padding: 1rem;
+    font-family: var(--tituloPagina);
+    color: var(--naranja);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+a {
+    padding: 0.5rem;
+    font-size: 2rem;
+} 
+
+/*Estilos Mailn*/
+
+.fondo {
+    background-image: url(img/programer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.tecnologias {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.contenedor-imagenes {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10rem 2rem;
+    text-align: center;
+}
+
+.logos .lenguaje{
+    width: 10rem;
+    height: 10rem;
+
+}
+
+.logos p {
+    font-size: 2rem;
+    color: var(--blanco);
+}
+
+/*Formulario de contacto*/
+
+.titulo {
+    margin: 2rem;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.contacto{
+    color: var(--blanco);
+    border-top: 1px solid var(--naranja);
+    border-radius: 6px;
+    padding: 5rem;
+    font-size: 2.5rem;
+}
+
+.contacto label{
+    display: block;
+    font-weight: bold;
+}
+
+.contacto div{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.contacto input[type='text'], .contacto textarea{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    padding: 1rem 1rem;
+    width:40 rem;
+    border: 1px solid #CED5D7;
+    margin: 1rem 0;
+}
+
+.contacto input[type='text']:focus, .contacto textarea:focus {
+    outline:auto;
+    box-shadow: 0 0 10px 3px #6872ad;
+    
+}
+
+.contacto input[type='submit']{
+    border: 1px solid white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.contacto input[type='submit']:hover{
+    cursor: pointer;
+    color: var(--naranja)
+}
+
+/*Footer*/
+div .copy{
+    margin-bottom: 0;
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.copy a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+.copy a:hover{
+    color: var(--naranja);
+}
+
+/*Sobre mi*/
+
+.programador{
+    padding-top: 2rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#parrafo{
+    padding: 5rem;
+    font-size: 3rem;
+    color: var(--blanco);
+}
+
+#parrafo span {
+    color: red;
+    font: bold;
+}
+
+/*Logos redes*/
+
+.logos-redes{
+    height: 5rem;
+    width: 5rem;
+    margin:0 auto;
+}
+
+#logos-redes{
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5rem;
+    align-items: center;
+
+}
+
+.enlace{
+    text-decoration: none;
+    color: var(--blanco);
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.enlace:hover {
+    color: var(--naranja);
+}
